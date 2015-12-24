@@ -32,6 +32,7 @@
 		D82071C31C044A4F00580639 /* UIButton+JWCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D82071C21C044A4F00580639 /* UIButton+JWCategory.m */; };
 		D82071C61C044A9900580639 /* UILabel+JWCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = D82071C51C044A9900580639 /* UILabel+JWCategory.m */; };
 		D82FD6551C044F3C002F0E0B /* UIFont+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D82FD6541C044F3C002F0E0B /* UIFont+Category.m */; };
+		D84C42CB1C2BEE9C00704098 /* NSString+HandleAmount.m in Sources */ = {isa = PBXBuildFile; fileRef = D84C42CA1C2BEE9C00704098 /* NSString+HandleAmount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,8 @@
 		D82071C51C044A9900580639 /* UILabel+JWCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+JWCategory.m"; path = "InitProduct/Sources/Custom/CateGory/FontSettingCategorys/UILabel+JWCategory.m"; sourceTree = SOURCE_ROOT; };
 		D82FD6531C044F3C002F0E0B /* UIFont+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Category.h"; sourceTree = "<group>"; };
 		D82FD6541C044F3C002F0E0B /* UIFont+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Category.m"; sourceTree = "<group>"; };
+		D84C42C91C2BEE9C00704098 /* NSString+HandleAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HandleAmount.h"; sourceTree = "<group>"; };
+		D84C42CA1C2BEE9C00704098 /* NSString+HandleAmount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HandleAmount.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +338,7 @@
 		D82071A71C03097600580639 /* CateGory */ = {
 			isa = PBXGroup;
 			children = (
+				D84C42C51C2BEDB800704098 /* NSString+HandleAmount */,
 				D82FD6521C044F3C002F0E0B /* UIFont+Category */,
 				D82071C01C044A1F00580639 /* FontSettingCategorys */,
 				D82071B21C040EEE00580639 /* CALayer+JWCategory */,
@@ -380,6 +384,15 @@
 				D82FD6541C044F3C002F0E0B /* UIFont+Category.m */,
 			);
 			path = "UIFont+Category";
+			sourceTree = "<group>";
+		};
+		D84C42C51C2BEDB800704098 /* NSString+HandleAmount */ = {
+			isa = PBXGroup;
+			children = (
+				D84C42C91C2BEE9C00704098 /* NSString+HandleAmount.h */,
+				D84C42CA1C2BEE9C00704098 /* NSString+HandleAmount.m */,
+			);
+			path = "NSString+HandleAmount";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +481,7 @@
 				D82071711C02DB0800580639 /* BaseTableViewController.m in Sources */,
 				D82071A11C02F7E800580639 /* LoginViewController.m in Sources */,
 				D82071971C02F77D00580639 /* Product_RootViewController.m in Sources */,
+				D84C42CB1C2BEE9C00704098 /* NSString+HandleAmount.m in Sources */,
 				D82071721C02DB0800580639 /* BaseViewController.m in Sources */,
 				D82FD6551C044F3C002F0E0B /* UIFont+Category.m in Sources */,
 				D82071B51C040EEE00580639 /* CALayer+JWCategory.m in Sources */,

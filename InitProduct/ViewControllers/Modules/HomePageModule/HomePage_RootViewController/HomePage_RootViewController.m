@@ -8,6 +8,7 @@
 
 #import "HomePage_RootViewController.h"
 #import "LoginViewController.h"
+#import "NSString+HandleAmount.h"
 
 @interface HomePage_RootViewController ()
 
@@ -20,6 +21,11 @@
     
     [self setRightNaviItemWithTitle:@"登录" imageName:nil];
 
+    double a = 100234.0234;
+    
+    NSLog(@"result = %@",[NSString doubleToPointString:a afertPoint:2]);
+    
+    NSLog(@"result2 = %@",[NSString convertDigitalToCapital:0]);
 }
 
 - (void)rightItemTapped {
