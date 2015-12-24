@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Navigation Controller-->
+        <scene sceneID="YpM-fo-lGN">
+            <objects>
+                <navigationController storyboardIdentifier="ProductModuleNav" id="783-tT-2T3" customClass="CustomNavigationController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="huD-4o-Csb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pjA-rc-dQX" kind="relationship" relationship="rootViewController" id="OdV-Kq-u3w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4tu-hZ-yTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="365"/>
+        </scene>
+        <!--理财产品-->
+        <scene sceneID="7De-BB-E8r">
+            <objects>
+                <viewController id="pjA-rc-dQX" customClass="Product_RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XC8-XI-8ZZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1O7-Za-dhy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hdX-Lg-Iqb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.6705882353" green="0.78039215689999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="理财产品" id="Dwg-Gf-CHw"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qSS-fz-dNq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45.5" y="364.5"/>
+        </scene>
+    </scenes>
+</document>
