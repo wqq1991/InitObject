@@ -23,7 +23,6 @@
     method_exchangeImplementations(imp, myImp);
 }
 
-
 - (id)myInitWithCoder:(NSCoder*)aDecode
 {
     [self myInitWithCoder:aDecode];
@@ -34,7 +33,7 @@
             
             UILabel *label = (UILabel *)self;
             
-            label.font = PingFangSCWithSize(label.font.pointSize);
+            label.font = PingFangSCWithSize(10);
             
         }
         

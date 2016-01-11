@@ -19,7 +19,13 @@
     
     Method myImp = class_getInstanceMethod([self class], @selector(myInitWithCoder:));
     
+    Method imp2 = class_getInstanceMethod([self class], @selector(init));
+    
+    Method myImp2 = class_getInstanceMethod([self class], @selector(myInit));
+    
     method_exchangeImplementations(imp, myImp);
+    
+    method_exchangeImplementations(imp2, myImp2);
 }
 
 
@@ -33,14 +39,26 @@
             
             UIButton *button = (UIButton *)self;
             
-            button.titleLabel.font = [UIFont systemFontOfSize:button.titleLabel.font.pointSize];
-            
+            button.titleLabel.font = [UIFont systemFontOfSize:10];
         }
         
     }
     return self;
 }
 
+- (id)myInit{
 
+      [self myInit];
+
+    if (self) {
+        
+        if ([self isKindOfClass:[UIButton class]]) {
+            
+            
+            
+        }
+    }
+    return self;
+}
 
 @end

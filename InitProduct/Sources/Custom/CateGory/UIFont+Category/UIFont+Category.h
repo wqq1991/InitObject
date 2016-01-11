@@ -8,6 +8,7 @@
 
 @interface UIFont (Category)
 
+
 + (UIFont *)fontOfHeitiScOfSize:(float)size;
 
 + (UIFont *)fontOfArialOfSize:(float)size;
@@ -16,7 +17,9 @@
 
 + (UIFont *)fontOfPingFangSCOfSize:(float)size;
 
-//输出所有的字体名称
-- (void)enumerateFonts;
+/**
+ *  输出所有的字体名称
+ */
++ (void)enumerateFonts;
 
 @end

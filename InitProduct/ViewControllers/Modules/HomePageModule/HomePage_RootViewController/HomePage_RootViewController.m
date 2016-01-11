@@ -21,11 +21,13 @@
     
     [self setRightNaviItemWithTitle:@"登录" imageName:nil];
 
-    double a = 100234.0234;
+    double a = 100234.02350;
     
-    NSLog(@"result = %@",[NSString doubleToPointString:a afertPoint:2]);
+    NSLog(@"result = %@",[NSString doubleToPointString:a effectiveLengthDecimal:2]);
     
     NSLog(@"result2 = %@",[NSString convertDigitalToCapital:0]);
+    
+    NSLog(@"result3 = %@",[NSString doubleToPointString:a fixedLengthDecimal:3]);
 }
 
 - (void)rightItemTapped {

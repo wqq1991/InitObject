@@ -38,7 +38,7 @@
     
     if (!font) {
         
-        font = [UIFont fontOfHeitiScOfSize:size];
+        font = [UIFont systemFontOfSize:size];
     }
     
     return font;
@@ -47,7 +47,7 @@
 /**
  *  输出所有的字体名称
  */
-- (void)enumerateFonts{
++ (void)enumerateFonts{
     
     for(NSString *familyName in [UIFont familyNames]){
         NSLog(@"Font FamilyName = %@",familyName); //*输出字体族科名字

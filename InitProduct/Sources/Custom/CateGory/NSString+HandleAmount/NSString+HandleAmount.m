@@ -14,9 +14,30 @@
 /*
  *保留N位有效小数  value:小数数值 point:需要保留几位有效小数
  */
-+ (NSString *)doubleToPointString:(double )value afertPoint:(NSUInteger )length {
++ (NSString *)doubleToPointString:(double )value effectiveLengthDecimal:(NSUInteger )length {
     
     double doubleNumber = value;
+    
+    NSNumberFormatter *nFormat = [[NSNumberFormatter alloc] init];
+    
+    [nFormat setNumberStyle:NSNumberFormatterNoStyle];
+
+    [nFormat setMaximumFractionDigits:length];
+    
+    return [nFormat stringFromNumber:[NSNumber numberWithDouble:doubleNumber]];
+}
+
+
+/*
+ *保留N位小数(如:18.00)  value:小数数值 point:需要保留固定的几位小数
+ */
++ (NSString *)doubleToPointString:(double )value fixedLengthDecimal:(NSUInteger )length {
+
+    NSString *formatStr = @"%0.";
+    formatStr = [formatStr stringByAppendingFormat:@"%ldf", length];
+    formatStr = [NSString stringWithFormat:formatStr, value];
+    
+    double doubleNumber = [formatStr doubleValue];
     
     NSNumberFormatter *nFormat = [[NSNumberFormatter alloc] init];
     
@@ -26,6 +47,7 @@
     
     return [nFormat stringFromNumber:[NSNumber numberWithDouble:doubleNumber]];
 }
+
 
 #pragma mark 现金字符转化为数字 eg： 123,456,33.00  to 12345633.00
 /*
@@ -62,13 +84,7 @@
  */
 + (NSString *)convertDigitalToCapital:(NSInteger )number
 {
-
-//    NSNumberFormatter *nFormat = [[NSNumberFormatter alloc] init];
-//    
-//    [nFormat setNumberStyle:NSNumberFormatterSpellOutStyle];                  //此方法有地区限制
-//
-//    return [nFormat stringFromNumber:[NSNumber numberWithInteger:number]];
-    
+  
     NSString *result = @"";
     
     if (number <= 9 && number >= 0)

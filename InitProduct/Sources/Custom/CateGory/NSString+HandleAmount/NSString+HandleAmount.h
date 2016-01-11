@@ -12,10 +12,15 @@
 
 #pragma mark 小数保留小数点后N位有效小数 eg： 45.6330  to 45.63 / 45.6 / 45.633
 /*
- *保留N位有效小数  value:小数数值 point:需要保留几位有效小数
+ *保留N位有效小数(如:18.10 to 18.1)  value:小数数值 point:需要保留几位有效小数
  */
-+ (NSString *)doubleToPointString:(double )value afertPoint:(NSUInteger )length;
++ (NSString *)doubleToPointString:(double )value effectiveLengthDecimal:(NSUInteger )length;
 
+/*
+ *保留N位小数(如:18.1 to 18.10)  value:小数数值 point:需要保留固定的几位小数
+ */
++ (NSString *)doubleToPointString:(double )value fixedLengthDecimal:(NSUInteger )length;
+ 
 #pragma mark 现金字符转化为数字 eg： 123,456,33.00  to 12345633.00
 /*
  *现金字符转化为数字 eg： 123,456,33.00  to 12345633.00
